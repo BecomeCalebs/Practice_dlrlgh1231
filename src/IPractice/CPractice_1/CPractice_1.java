@@ -1,11 +1,11 @@
-package CPractice.CPractice_1;
+package IPractice.CPractice_1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import CPractice.CPractice;
+import IPractice.IPractice;
 
-public class CPractice_1 extends CPractice{
+public class CPractice_1 implements IPractice{
     //생성자
     //인스턴스가 생성되는 시점에 호출되는 메서드 
     public CPractice_1(){
@@ -20,11 +20,10 @@ public class CPractice_1 extends CPractice{
     //메서스(or 멤버함수)
     //필드(=멤버변수) 초기화
     public void initialize(){
-        titles = new ArrayList<>(); 
+        titles = new ArrayList<>();
         titles.add("1. 초기화란?");
         titles.add("2. 변수의 종류");
-
-    } 
+    }
     // 필드(=멤버변수) 값 변경 
     public void update(){
 
@@ -69,7 +68,5 @@ public class CPractice_1 extends CPractice{
 
         //필드(= 메서드): 클래스에 선언 된 변수
         //m_str, titles를 필드라 한다.
-
-
     }
 }
